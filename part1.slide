@@ -8,9 +8,22 @@ github.com/arl
 aurelien@develer.com
 
 : Welcome
+
 : About this training
+: 2 parts - 90 min each
+: goal: familiarization with Go
+: get a feeling a language
+: for begginers, first-timers
+: probably boring for people that know already to program in Go
+
 : Myself
+: what I have been doing
+: where I'm working now
+: what I'm working on
+: experience with Go
+
 : Develer
+
 : Audience Background
 : Installed Go?
 
@@ -111,3 +124,21 @@ Dash (OSX) - Zeal (Linux/Windows)
 * Profile programs
 
 .image img/tool/pprof-ui-flamegraph-no-anim.png
+
+* A tour of Go
+
+* A tour of Go
+
+.link https://tour.golang.org
+
+    go tool tour
+
+* Basics
+
+.link http://localhost:3999/basics/1
+.link https://tour.golang.org/basics/1
+
+* Flow control
+
+.link http://localhost:3999/flowcontrol/1
+.link https://tour.golang.org/flowcontrol/1

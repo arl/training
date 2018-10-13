@@ -1,0 +1,12 @@
+$ go test -bench 'TreePointLocation' -run xxx
+goos: linux
+goarch: amd64
+pkg: github.com/arl/go-rquad
+BenchmarkCNTreePointLocationRes32-8       200000              9258 ns/op
+BenchmarkCNTreePointLocationRes16-8       200000              9943 ns/op
+BenchmarkCNTreePointLocationRes8-8        200000             10562 ns/op
+BenchmarkCNTreePointLocationRes4-8        200000             12010 ns/op
+BenchmarkCNTreePointLocationRes2-8        100000             13916 ns/op
+BenchmarkCNTreePointLocationRes1-8        100000             14071 ns/op
+PASS
+ok      github.com/arl/go-rquad 16.239s

@@ -1,0 +1,5 @@
+$ dlv debug .
+Type 'help' for list of commands.
+(dlv) continue
+Hello!
+Process 22293 has exited with status 0

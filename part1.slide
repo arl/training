@@ -1,0 +1,113 @@
+First steps with Go - part 1
+Golab
+22 Oct 2018
+
+Aurélien Rainone
+Go Programmer at Develer
+github.com/arl
+aurelien@develer.com
+
+: Welcome
+: About this training
+: Myself
+: Develer
+: Audience Background
+: Installed Go?
+
+* First steps with Go - part 1
+
+1) The Go language
+2) The Go toolchain
+3) A tour of Go
+
+
+: what can you do now that you have go installed
+: Mettre numeros, index et passer rapidement sur les slides d'index
+
+
+* The Go language
+
+* The Go language
+
+- statically typed
+: types checked at compile-time
+- compiled
+- garbage collected
+- concurrency-ready
+- safe
+: memory-safe (no pointers arithmetic)
+: not concurrent safe (data race are possible)
+
+* The go toolchain
+
+* Compiler
+
+and cross-compiler...
+
+.code code/tool/dist
+
+* Run
+
+.code code/tool/hello.go
+.code code/tool/run
+.code code/tool/run-out
+
+* Build
+
+.code code/tool/hello.go
+.code code/tool/build
+.code code/tool/build2
+.code code/tool/run-out
+
+* Documentation
+
+.code code/tool/doc
+.link https://golang.org
+.image img/tool/doc.png 450 _
+
+* Documentation
+
+Dash (OSX) - Zeal (Linux/Windows)
+
+.image img/tool/zeal.png 450 _
+
+* Install packages
+
+.code code/tool/get2
+.code code/tool/get
+.code code/tool/dlv
+
+* Format code
+
+`gofmt`
+
+.code code/tool/fmt1.go
+.code code/tool/fmt2.go
+
+: personally never called it by hand
+: IDE calls it for you
+
+* Test suites
+
+.code code/tool/test.go
+.code code/tool/test
+
+* Benchmarks
+
+.code code/tool/bench
+
+* Profile programs
+
+    go tool pprof
+
+.image ./img/tool/pprof-ui-callgraph.gif
+
+* Profile programs
+
+    go tool pprof
+
+.image img/tool/pprof-ui-flamegraph.gif
+
+* Profile programs
+
+.image img/tool/pprof-ui-flamegraph-no-anim.png

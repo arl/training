@@ -15,32 +15,53 @@ aurelien@develer.com
 : get a feeling a language
 : for begginers, first-timers
 : probably boring for people that know already to program in Go
+* Workshop target/goal
 
 : Myself
 : what I have been doing
 : where I'm working now
 : what I'm working on
 : experience with Go
+- Go begginers
+- Interactive
 
 : Develer
+
+* Schedule
+
+1. Language Overview. (1h30)
+2. Write a program. (1h30+)
+
+* Go?
+
+* Develer
+
+- Software / Hardware
+- Embedded / Desktop / Cloud
+- Linux
+- Courses
+
+.link https://www.develer.com/
+.image ./img/develer-logo.png
+
+* Ready?
 
 : Audience Background
 : Installed Go?
 
 * First steps with Go - part 1
 
-1) The Go language
-2) The Go toolchain
+1) The language
+2) The toolchain
 3) A tour of Go
 
 
 : what can you do now that you have go installed
 : Mettre numeros, index et passer rapidement sur les slides d'index
 
+* The language
 
-* The Go language
-
-* The Go language
+* The language
 
 - statically typed
 : types checked at compile-time
@@ -51,7 +72,7 @@ aurelien@develer.com
 : memory-safe (no pointers arithmetic)
 : not concurrent safe (data race are possible)
 
-* The go toolchain
+* The toolchain: 'go'
 
 * Compiler
 
@@ -59,17 +80,18 @@ and cross-compiler...
 
 .code code/tool/dist
 
-* Run
-
-.code code/tool/hello.go
-.code code/tool/run
-.code code/tool/run-out
 
 * Build
 
 .code code/tool/hello.go
 .code code/tool/build
 .code code/tool/build2
+.code code/tool/run-out
+
+* Run
+
+.code code/tool/hello.go
+.code code/tool/run
 .code code/tool/run-out
 
 * Documentation
@@ -92,7 +114,7 @@ Dash (OSX) - Zeal (Linux/Windows)
 
 * Format code
 
-`gofmt`
+`gofmt`, performed by your IDE.
 
 .code code/tool/fmt1.go
 .code code/tool/fmt2.go

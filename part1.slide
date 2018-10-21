@@ -142,7 +142,7 @@ Dash (OSX) - Zeal (Linux/Windows)
 
 * Format code
 
-`gofmt`, performed by your IDE.
+`gofmt`, ran by your IDE.
 
 .code code/tool/fmt1.go
 .code code/tool/fmt2.go
@@ -150,9 +150,9 @@ Dash (OSX) - Zeal (Linux/Windows)
 : here is an example of what `gofmt` does for you
 : don't need to bother about the style
 : IDE calls it for you
-: also installed alongside `go tool`
+: installed alongside `go tool`
 
-* Test suites
+* Tests
 
 xxx_test.go:
 .code code/tool/test/func_test.go

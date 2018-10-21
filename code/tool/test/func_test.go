@@ -3,7 +3,8 @@ package main
 import "testing"
 
 func TestMyFunction(t *testing.T) {
-	if "hello" == "world" {
+	hello := "hello"
+	if "hello" != hello {
 		t.Fail()
 	}
 }

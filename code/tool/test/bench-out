@@ -1,0 +1,6 @@
+$ go test -bench MyFunction
+goos: linux
+goarch: amd64
+pkg: github.com/arl/go-rquad
+BenchmarkMyFunction-8       200000              9258 ns/op
+PASS

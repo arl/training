@@ -83,16 +83,22 @@ and cross-compiler...
 
 * Build
 
+hello.go:
 .code code/tool/hello.go
+
+Produce binary:
 .code code/tool/build
-.code code/tool/build2
-.code code/tool/run-out
+
+: use `go build` to produce binaries
 
 * Run
 
+hello.go:
 .code code/tool/hello.go
+Produce binary (temp dir) and run it:
 .code code/tool/run
-.code code/tool/run-out
+
+: use `go run` to fastly run go code.
 
 * Documentation
 

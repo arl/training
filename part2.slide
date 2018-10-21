@@ -12,3 +12,27 @@ aurelien@develer.com
 * URL shortener
 
 .image img/shortener.png 550 _
+
+# https://www.draw.io/?state=%7B%22ids%22:%5B%221BkNqPtj9FAenXqvCElhHSLCmf3wqwSzG%22%5D,%22action%22:%22open%22,%22userId%22:%22107759458204243441297%22%7D#G1BkNqPtj9FAenXqvCElhHSLCmf3wqwSzG
+
+* Interfaces
+
+    type Hasher interface {
+        // Hash generates the hash value of v.
+        Hash(v string) string
+    }
+
+- Create short URLs from original ones.
+
+* Interfaces
+
+    type KVS interface {
+        // Store stores a key value pair.
+        Store(k, v string) error
+
+        // Load returns the value associated with a given key.
+        Load(k string) (string, error)
+    }
+
+- Store pair of URL's, (key=short, value=original)
+- Load original URL from short one.

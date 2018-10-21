@@ -7,46 +7,52 @@ Go Programmer at Develer
 github.com/arl
 aurelien@develer.com
 
-: Welcome
-
-: About this training
-: 2 parts - 90 min each
-: goal: familiarization with Go
-: get a feeling a language
-: for begginers, first-timers
-: probably boring for people that know already to program in Go
-* Workshop target/goal
-
-: Myself
-: what I have been doing
-: where I'm working now
-: what I'm working on
-: experience with Go
-- Go begginers
-- Interactive
-
-: Develer
-
-* Schedule
-
-1. Language Overview. (1h30)
-2. Write a program. (1h30+)
+: thanks
+: welcome
+: Aurélien
+: assisted by Ruggi, Vincenzo
+: we're all here to answer all questions
 
 * Go?
 
+: C, C++, python for 15 years
+: discovered Go 3 years ago, loved it!
+
+: working full-time on project involving Go and embedded.
+
 * Develer
 
-- Software / Hardware
-- Embedded / Desktop / Cloud
-- Linux
-- Courses
+- software / hardware
+- open-source
+- new technologies
 
 .link https://www.develer.com/
 .image ./img/develer-logo.png
 
+: we develop software and hardware solutions for customers
+: strong open-source culture
+
+* Workshop goal
+
+- for *begginers* in Go
+- make *you* write some code!
+
+: people that know to program, and want to learn Go.
+: goal is to get a feeling of the language, see and write code.
+
+* Workshop schedule
+
+1. Language Overview and Examples (1h30)
+2. Write a complete program. (1h30+)
+
+: What are we going to do?
+: 2 parts, complementary, you can follow separately.
+: 1st part (now -=> coffee break)
+: 2nd part (coffee break -> until the end)
+
 * Ready?
 
-: Audience Background
+: Audience Background? Coming from C++, Java, PHP ?
 : Installed Go?
 
 * First steps with Go - part 1
@@ -55,31 +61,38 @@ aurelien@develer.com
 2) The toolchain
 3) A tour of Go
 
-
-: what can you do now that you have go installed
-: Mettre numeros, index et passer rapidement sur les slides d'index
+: dont wait here
 
 * The language
 
 * The language
 
-- statically typed
-: types checked at compile-time
 - compiled
+- static typing
 - garbage collected
-- concurrency-ready
+- concurrency ready
 - safe
-: memory-safe (no pointers arithmetic)
-: not concurrent safe (data race are possible)
+
+: compiled     :
+: static typing:   types are checked at compile-time
+: GC           :   Go has a garbage collector
+: concurrency  :   Concurrency primitives
+: safe         :   -     memory-safe (pointers but no pointers arithmetic)
+:                  - NOT concurrent safe (data race are possible)
 
 * The toolchain: 'go'
 
-* Compiler
+: go = language
+: go tool : command-line tool named go
+: let's see what we can do with the `go tool`
 
-and cross-compiler...
+* Compile
+
+and cross-compile...
 
 .code code/tool/dist
 
+: many platforms and architectures
 
 * Build
 
@@ -106,17 +119,25 @@ Produce binary (temp dir) and run it:
 .link https://golang.org
 .image img/tool/doc.png 450 _
 
+: `godoc` parses and generates HTML documentation from your code.
+: installed alongside `go tool`
+
 * Documentation
 
 Dash (OSX) - Zeal (Linux/Windows)
 
 .image img/tool/zeal.png 450 _
 
+: another easy way to browse documentation for the Go standard library: Dash or Zeal
+
 * Install packages
 
 .code code/tool/get2
 .code code/tool/get
 .code code/tool/dlv
+
+: `go get` is a package installer, downloader
+: download and build dependencies automatically
 
 * Format code
 
@@ -125,17 +146,30 @@ Dash (OSX) - Zeal (Linux/Windows)
 .code code/tool/fmt1.go
 .code code/tool/fmt2.go
 
-: personally never called it by hand
+: here is an example of what `gofmt` does for you
+: don't need to bother about the style
 : IDE calls it for you
+: also installed alongside `go tool`
 
 * Test suites
 
-.code code/tool/test.go
-.code code/tool/test
+xxx_test.go:
+.code code/tool/test/func_test.go
+.code code/tool/test/test-out
+
+: easy to write and run tests
+: file ending with _test.go
+: go test
 
 * Benchmarks
 
-.code code/tool/bench
+xxx_test.go:
+.code code/tool/test/bench_test.go
+.code code/tool/test/bench-out
+
+: easy to write and run benchmarks
+: file ending with _test.go
+: go test -bench
 
 * Profile programs
 
@@ -143,23 +177,38 @@ Dash (OSX) - Zeal (Linux/Windows)
 
 .image ./img/tool/pprof-ui-callgraph.gif
 
+: pprof: easy to profile your code
+: optimize performance
+: call-graph
+
 * Profile programs
 
     go tool pprof
 
 .image img/tool/pprof-ui-flamegraph.gif
 
+: flame graph since go 1.11
+
 * Profile programs
 
 .image img/tool/pprof-ui-flamegraph-no-anim.png
 
+: visualize time taken by 1000s stack traces all at once
+: quickly identity hot code-paths
+: y-axis represents stack depth.
+: x-axis is not the passing of time but it represents 100% of CPU-time
+
 * A tour of Go
 
 * A tour of Go
+
+    go tool tour
+
+Or
 
 .link https://tour.golang.org
 
-    go tool tour
+: point your browser
 
 * Basics
 

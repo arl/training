@@ -15,7 +15,8 @@ aurelien@develer.com
 
 * Go?
 
-: C, C++, python for 15 years
+: programmer for 15 years
+: C, C++ mostly
 : discovered Go 3 years ago, loved it!
 
 : working full-time on project involving Go and embedded.
@@ -42,8 +43,8 @@ aurelien@develer.com
 
 * Workshop schedule
 
-1. Language Overview and Examples (1h30)
-2. Write a complete program. (1h30+)
+- part 1. Short language overview, many interactive examples. (1h30)
+- part 2. Write a complete program. (1h30+)
 
 : What are we going to do?
 : 2 parts, complementary, you can follow separately.
@@ -200,22 +201,23 @@ xxx_test.go:
 
 * A tour of Go
 
+: let's write some code
+: the tour of Go is an interactive tool to learn Go
+
 * A tour of Go
 
+- locally
     go tool tour
-
-Or
-
+- online
 .link https://tour.golang.org
 
-: point your browser
+* A tour of Go
 
-* Basics
-
+Basics
 .link http://localhost:3999/basics/1
 .link https://tour.golang.org/basics/1
 
-* Flow control
-
-.link http://localhost:3999/flowcontrol/1
-.link https://tour.golang.org/flowcontrol/1
+Flow control: 1-4, 9-12
+More types: 1-8, 16-23
+Methods: 1-14, 19-20
+Concurrency: 1-6, 9

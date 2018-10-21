@@ -211,12 +211,15 @@ xxx_test.go:
 - online
 .link https://tour.golang.org
 
+: open browser
+: do the welcome page together
+
 * A tour of Go
 
-Basics
 .link http://localhost:3999/basics/1
 .link https://tour.golang.org/basics/1
 
+Basics: all
 Flow control: 1-4, 9-12
 More types: 1-8, 16-23
 Methods: 1-14, 19-20

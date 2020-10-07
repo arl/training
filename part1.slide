@@ -98,9 +98,11 @@ and cross-compile...
 * Build
 
 hello.go:
+
 .code code/tool/hello.go
 
 Produce binary:
+
 .code code/tool/build
 
 : use `go build` to produce binaries
@@ -108,8 +110,11 @@ Produce binary:
 * Run
 
 hello.go:
+
 .code code/tool/hello.go
+
 Produce binary (temp dir) and run it:
+
 .code code/tool/run
 
 : use `go run` to fastly run go code.
@@ -117,6 +122,7 @@ Produce binary (temp dir) and run it:
 * Documentation
 
 .code code/tool/doc
+
 .link https://golang.org
 .image img/tool/doc.png 450 _
 
@@ -134,8 +140,11 @@ Dash (OSX) - Zeal (Linux/Windows)
 * Install packages
 
 .code code/tool/get2
+
 .code code/tool/get
+
 .code code/tool/dlv
+
 
 : `go get` is a package installer, downloader
 : download and build dependencies automatically
@@ -145,6 +154,7 @@ Dash (OSX) - Zeal (Linux/Windows)
 `gofmt`, ran by your IDE.
 
 .code code/tool/fmt1.go
+
 .code code/tool/fmt2.go
 
 : here is an example of what `gofmt` does for you
@@ -155,7 +165,9 @@ Dash (OSX) - Zeal (Linux/Windows)
 * Tests
 
 xxx_test.go:
+
 .code code/tool/test/func_test.go
+
 .code code/tool/test/test-out
 
 : easy to write and run tests
@@ -165,7 +177,9 @@ xxx_test.go:
 * Benchmarks
 
 xxx_test.go:
+
 .code code/tool/test/bench_test.go
+
 .code code/tool/test/bench-out
 
 : easy to write and run benchmarks
